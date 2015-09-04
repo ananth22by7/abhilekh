@@ -1,0 +1,211 @@
+<html>
+<head>
+	<title>
+		ASHA sign-in
+	</title>
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+	<img src="images/phone.png" class="img-phone" alt="">
+	<div class="phone-wrapper">
+		<div class="container landing-page-accordion-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+					    <div class="panel-heading blue-panel" role="tab" id="headingOne">
+					    	<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					      	<h4 class="panel-title">
+					          <i class="fa fa-quote-right accordion-icon"></i>Prasnavalli
+						    </h4>
+					      </a>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body">
+					        <p class="game-question">12. Does the child have fever?</p>
+
+								<form>
+									<input type="radio" name="q3"> Yes
+									<br>
+									<input type="radio" name="q3"> Slightly
+									<br>
+									<input type="radio" name="q3"> No
+								</form>
+								<div class="submit-row">
+									<a href="#" class="form-back-btn"><i class="fa fa-chevron-left"></i>Back</a>
+									<a href="game-diagnosis.html" class="form-next-btn text-green">Finish<i class="fa fa-chevron-right"></i></a>
+								</div>
+								
+
+					      </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+						  <div class="panel-heading" role="tab" id="headingTwo"> 
+					  		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						      <h4 class="panel-title">
+					          <i class="fa fa-pencil accordion-icon"></i>Create Record
+									</h4>
+								</a>
+					    </div>
+
+					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					      <div class="panel-body">
+					        <form>
+					        	<div class="form-group">
+					        		<label><i class="fa fa-key form-icon"></i>Child ID: <i>98765432</i></label>
+					        	</div>
+					        	<div class="form-group">
+					        		<label><i class="fa fa-child form-icon"></i>Child's name</label>
+					        		<input type="text" class="form-control" placeholder="Child's full name">
+					        	</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-birthday-cake form-icon"></i>Date of birth</label>
+					 						<input type="text" class="form-control" placeholder="DD/MM/YYYY">
+					 					</div>
+					 					<div class="row">
+					 						<div class="col-xs-6">
+					 							<div class="form-group">
+					 								<label><i class="fa fa-venus-mars form-icon"></i>Gender</label>
+					 								<input type="text" class="form-control" placeholder="M/F">
+					 							</div>
+					 						</div>
+					 						<div class="col-xs-6">
+					 							<div class="form-group">
+					 								<label><img src="images/drop.png" class="form-icon-image" alt="">Blood group</label>
+					 								<input type="text" class="form-control" placeholder="Blood group">
+					 							</div>
+					 						</div>
+					 					</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-female form-icon"></i>Mother's name</label>
+					 						<input type="text" class="form-control" placeholder="Mother's full name">
+					 					</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-male form-icon"></i>Father's name</label>
+					 						<input type="text" class="form-control" placeholder="Father's full name">
+					 					</div>
+					 					<div class="text-right">
+					 						<a href="details-first-time.html" class="btn btn-primary">Submit Record <i class="fa fa-chevron-right submit-right"></i></a>
+					 					</div>
+					        </form>
+					      </div>
+					    </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container landing-page-search-container">
+			<div class="border-container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Records</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="landing-page-search-wrapper form-control">
+							<i class="fa fa-search"></i>
+							<input type="text" placeholder="Search for a record" class="landing-page-search">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Sushant Kumar</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Kamla Kumar</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>11 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-red"><i><i class="fa fa-clock-o"></i>Next visit on 16 Aug 2015 (tomorrow)</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+						
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Kishen Singh</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Kanti Singh</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>7 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-yellow"><i><i class="fa fa-clock-o"></i>Next visit on 17 Aug 2015 (2 days)</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Sunil Prasad</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Bindu Prasad</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>21 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-green"><i><i class="fa fa-clock-o"></i>Next visit on 18 Aug 2015</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Kanti Dalvi</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Indu Dalvi</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>21 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-green"><i><i class="fa fa-clock-o"></i>Next visit on 20 Aug 2015</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn btn-primary btn-lg view-all-records-btn">View All Records (125)</div>
+		</div>
+	</div>
+
+	<script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>
